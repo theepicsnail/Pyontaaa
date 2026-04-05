@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://di2engpeoahaf"]
+
+[ext_resource type="Script" uid="uid://2dcftgwwt4da" path="res://Drop/drop.gd" id="1_f4jv2"]
+[ext_resource type="Texture2D" uid="uid://dfbtuh508r8j5" path="res://Drop/drop.png" id="1_hmaih"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f4jv2"]
+radius = 14.142136
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=122831064 groups=["collectable"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_f4jv2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1810294384]
+scale = Vector2(0.09870057, 0.09870057)
+texture = ExtResource("1_hmaih")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1684189980 groups=["collectable"]]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_f4jv2")

@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://be42n2mqk8h80"]
-
-[ext_resource type="Script" uid="uid://h7fd5ovqw8ud" path="res://Spawner.gd" id="1_rl6k5"]
-[ext_resource type="PackedScene" uid="uid://di2engpeoahaf" path="res://drop.tscn" id="2_2uhym"]
-
-[node name="Node2D" type="Node2D" unique_id=1201187249]
-script = ExtResource("1_rl6k5")
-collectable_scene = ExtResource("2_2uhym")

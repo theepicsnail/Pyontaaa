@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://capholwcf4565"]
 
-[ext_resource type="PackedScene" uid="uid://dkfybum1em5q" path="res://Ground.tscn" id="1_4cvuw"]
-[ext_resource type="PackedScene" uid="uid://be42n2mqk8h80" path="res://Spanwer.tscn" id="1_7mckg"]
-[ext_resource type="PackedScene" uid="uid://ci5f7eeoveky4" path="res://peeyonta.tscn" id="2_j2eoc"]
-[ext_resource type="PackedScene" uid="uid://702g2esfw5ui" path="res://Score.tscn" id="5_66br4"]
+[ext_resource type="PackedScene" uid="uid://dkfybum1em5q" path="res://Ground/Ground.tscn" id="1_4cvuw"]
+[ext_resource type="PackedScene" uid="uid://be42n2mqk8h80" path="res://Spawner/Spanwer.tscn" id="1_7mckg"]
+[ext_resource type="PackedScene" uid="uid://ci5f7eeoveky4" path="res://Player/peeyonta.tscn" id="2_j2eoc"]
+[ext_resource type="PackedScene" uid="uid://702g2esfw5ui" path="res://Score/Score.tscn" id="5_66br4"]
 
 [node name="Node2D" type="Node2D" unique_id=1216393745]
 

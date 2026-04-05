@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ci5f7eeoveky4"]
+
+[ext_resource type="Script" uid="uid://b08x1rnbxwwyj" path="res://Player/peeyonta.gd" id="1_nnivj"]
+[ext_resource type="Texture2D" uid="uid://ce6j7bo4nyexx" path="res://Player/peeyonta.png" id="1_vgcsu"]
+[ext_resource type="Script" uid="uid://d4gcx6eixxv88" path="res://Player/Mouth.gd" id="3_e736b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vgcsu"]
+radius = 80.305664
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nnivj"]
+radius = 23.0
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1417008593]
+script = ExtResource("1_nnivj")
+
+[node name="Peeyonta" type="Sprite2D" parent="." unique_id=634992938]
+position = Vector2(-2, 3.9999995)
+scale = Vector2(0.20740741, 0.2074074)
+texture = ExtResource("1_vgcsu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1851233092]
+shape = SubResource("CircleShape2D_vgcsu")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=211151358]
+position = Vector2(-9, 52)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("3_e736b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=508203561]
+position = Vector2(2, -3)
+shape = SubResource("CircleShape2D_nnivj")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
