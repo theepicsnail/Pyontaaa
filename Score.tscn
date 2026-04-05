@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://702g2esfw5ui"]
+
+[ext_resource type="Script" uid="uid://0y88vep1qlx4" path="res://Score.gd" id="1_7urb4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mq4wf"]
+font_size = 48
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" unique_id=191973291]
+
+[node name="Label" type="Label" parent="." unique_id=2060341108]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Score: "
+label_settings = SubResource("LabelSettings_mq4wf")
+script = ExtResource("1_7urb4")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://capholwcf4565"]
+
+[ext_resource type="PackedScene" uid="uid://dkfybum1em5q" path="res://Ground.tscn" id="1_4cvuw"]
+[ext_resource type="PackedScene" uid="uid://be42n2mqk8h80" path="res://Spanwer.tscn" id="1_7mckg"]
+[ext_resource type="PackedScene" uid="uid://ci5f7eeoveky4" path="res://peeyonta.tscn" id="2_j2eoc"]
+[ext_resource type="PackedScene" uid="uid://702g2esfw5ui" path="res://Score.tscn" id="5_66br4"]
+
+[node name="Node2D" type="Node2D" unique_id=1216393745]
+
+[node name="CollisionShape2D" parent="." unique_id=698217445 instance=ExtResource("1_4cvuw")]
+
+[node name="CharacterBody2D" parent="." unique_id=1729992366 instance=ExtResource("2_j2eoc")]
+position = Vector2(640, 500)
+
+[node name="Spawner" parent="." unique_id=1201187249 instance=ExtResource("1_7mckg")]
+position = Vector2(-26, 142)
+
+[node name="Score" parent="." unique_id=191973291 instance=ExtResource("5_66br4")]
+position = Vector2(38, 30)
